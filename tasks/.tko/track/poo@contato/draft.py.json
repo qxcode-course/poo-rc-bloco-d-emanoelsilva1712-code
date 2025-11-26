@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-26_01-07-11",
+            "content": "@@ -1,229 +0,0 @@\n-class Contato:%0A    def __init__(self), nome: str:%0A        self.__nome = nome:%0A        self.__fones: list%3Cfone%3E%0A        self.__favorited: bool%0A%0Aclass Fone:%0A    def __init__(self):%0A        self.__id: str%0A        self.__number: int%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-26_01-18-45",
+            "content": "class Contato:\n    def __init__(self), nome: str:\n        self.__nome = nome:\n        self.__fones: list<fone>\n        self.__favorited: bool\n\nclass Fone:\n    def __init__(self):\n        self.__id: str\n        self.__number: int\n",
+            "lines": "10"
+        }
+    ]
+}
