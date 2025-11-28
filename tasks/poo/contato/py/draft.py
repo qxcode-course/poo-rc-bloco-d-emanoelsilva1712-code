@@ -11,35 +11,32 @@ class Fone:
         return self.__id
 
     def getNumber(self):
-        return self.__id
+        return self.__number
     
-    def toString():
+    def __str__(self):
         return f"{self.__id}:{self.__number}"
 
 class Contato:
-    def __init__(self), nome: str:
+    def __init__(self, nome: str):
         self.__nome: str = nome
         self.__fone: list = []
         self.__favorited: bool = False
 
-    def addfone(self, id: str, number: str)
+    def addfone(self, id: str, number: str):
         fone = Fone(id, number)
-            if fone.isValid():
-                self.__fone.append(fone)
+        if fone.isValid():
+            self.__fone.append(fone)
             return
-            print("fail: invalido")
+        print("fail: invalid number")
 
     def rmFone(self, index: int):
         try:
-            self.fone.pop(index)
+            self.__fone.pop(index)
         except:
-            print(fail: index invalido)
+            print("fail: index invalido")
 
     def toogleFavorited(self):
-        self.__Fone = not self.__favorited
-
-    def isFavorited(self):
-        self.__favorited
+        self.__favorited = not self.__favorited
 
     def getFones(self):
         return self.__fone
@@ -48,28 +45,44 @@ class Contato:
         return self.__nome
 
     def setNome(self, nome: str):
-        return self.__nome = nome
+        return self.__nome == nome
 
     def __str__(self):
-        return f"@ self.__nome [{self.__favorited}:{self.__number}]"
+        frag = "@" if self.__favorited else "-"
+        return f"{frag} {self.__nome} [" + ", ".join(str(e) for e in self.__fone)+"]"
+
+    def isFavorited(self):
+        return self.__favorited
 
 def main():
-    contato = Contato()
+    contato = Contato("")
 
-    try:
-        while
+    while True:
+        line = input()
+        print("$" + line)
+        args = line.split()
 
-
-        if args[0] == "init":
-
-        elif args[0] == "add":
+        if args[0] == "end":
+            break
 
         elif args[0] == "show":
-            print(show)
+            print(contato)
+
+        elif args[0] == "init":
+            contato = Contato(args[1])
+
+        elif args[0] == "add":
+            contato.addfone(args[1], args[2])
 
         elif args[0] == "rm":
+            contato.rmFone(int(args[1]))
 
-        elif args[0] == "tfav"
+        elif args[0] == "tfav":
+            contato.toogleFavorited()
+        else:
+            print("comando invalido")
+
+main()
             
 
 

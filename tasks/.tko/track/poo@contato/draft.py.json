@@ -22,8 +22,203 @@
         },
         {
             "label": "2025-11-26_14-55-45",
-            "content": "class Fone:\n    def __init__(self, id:str, number:str):\n        self.__id: str = id\n        self.__number: str = number\n\n    def isValid(self):\n        em = \"013456789().\"\n        return all(e in em for e in self.__number)\n\n    def getId(self):\n        return self.__id\n\n    def getNumber(self):\n        return self.__id\n    \n    def toString():\n        return f\"{self.__id}:{self.__number}\"\n\nclass Contato:\n    def __init__(self), nome: str:\n        self.__nome: str = nome\n        self.__fone: list = []\n        self.__favorited: bool = False\n\n    def addfone(self, id: str, number: str)\n        fone = Fone(id, number)\n            if fone.isValid():\n                self.__fone.append(fone)\n            return\n            print(\"fail: invalido\")\n\n    def rmFone(self, index: int):\n        try:\n            self.fone.pop(index)\n        except:\n            print(fail: index invalido)\n\n    def toogleFavorited(self):\n        self.__Fone = not self.__favorited\n\n    def isFavorited(self):\n        self.__favorited\n\n    def getFones(self):\n        return self.__fone\n\n    def getNome(self):\n        return self.__nome\n\n    def setNome(self, nome: str):\n        return self.__nome = nome\n\n    def __str__(self):\n        return f\"@ self.__nome [{self.__favorited}:{self.__number}]\"\n\ndef main():\n    contato = Contato()\n\n    try:\n        while\n\n\n        if args[0] == \"init\":\n\n        elif args[0] == \"add\":\n\n        elif args[0] == \"show\":\n            print(show)\n\n        elif args[0] == \"rm\":\n\n        elif args[0] == \"tfav\"\n            \n\n\n        \n\n\n    ",
+            "content": "@@ -1336,13 +1336,8 @@\n hile\n- True\n %0A%0A%0A \n",
             "lines": "79"
+        },
+        {
+            "label": "2025-11-28_01-09-33",
+            "content": "@@ -1318,200 +1318,42 @@\n     \n-    while True%0A            try:%0A                line = input()%0A                print(%22$%22 + line)%0A                args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0A        el\n+try:%0A        while True%0A%0A%0A        \n if a\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-11-28_01-12-14",
+            "content": "@@ -1525,95 +1525,46 @@\n == %22\n-show%22:%0A            print(contato)%0A%0A        elif args%5B0%5D == %22init%22:%0A            contato.\n+init%22:%0A%0A        elif args%5B0%5D == %22add%22:\n %0A%0A  \n@@ -1586,19 +1586,20 @@\n %5B0%5D == %22\n-add\n+show\n %22:%0A     \n@@ -1609,24 +1609,18 @@\n     \n-contato.addfone(\n+print(show\n )%0A%0A \n@@ -1651,37 +1651,8 @@\n rm%22:\n-%0A            contato.rmfone()\n %0A%0A  \n@@ -1684,46 +1684,8 @@\n av%22%0A\n-            contato.toogleFavorited()%0A\n     \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-11-28_01-28-49",
+            "content": "@@ -1311,10 +1311,8 @@\n ato(\n-%22%22\n )%0A%0A \n@@ -1611,26 +1611,9 @@\n tato\n-= Contato(args%5B1%5D)\n+.\n %0A%0A  \n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-11-28_01-31-26",
+            "content": "@@ -1601,33 +1601,32 @@\n          contato\n- \n = Contato(args%5B1\n@@ -1692,24 +1692,8 @@\n one(\n-args%5B1%5D, args%5B2%5D\n )%0A%0A \n@@ -1752,20 +1752,8 @@\n one(\n-int(args%5B1%5D)\n )%0A%0A \n@@ -1824,74 +1824,8 @@\n d()%0A\n-        else:%0A            print(%22fail: comando invalido%22)%0A%0Amain()%0A\n     \n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-11-28_01-33-11",
+            "content": "@@ -803,26 +803,24 @@\n        self.\n-__\n fone.pop(ind\n@@ -1207,56 +1207,8 @@\n f):%0A\n-        frag = %22@%22 if self.__favorited else %22-%22%0A\n     \n@@ -1224,16 +1224,10 @@\n n f%22\n-%7Bfrag%7D %7B\n+@ \n self\n@@ -1237,55 +1237,44 @@\n nome\n-%7D\n  %5B\n-%22+ %22, %22.join(str(e) for e in self.__fone)+%22%22\n+%7Bself.__favorited%7D:%7Bself.__number%7D\n %5D%22%0A%0A\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-39-32",
+            "content": "@@ -311,22 +311,18 @@\n  self.__\n-number\n+id\n %0A    %0A  \n@@ -336,20 +336,16 @@\n oString(\n-self\n ):%0A     \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-28_01-41-25",
+            "content": "@@ -426,24 +426,25 @@\n _init__(self\n+)\n , nome: str)\n@@ -434,33 +434,32 @@\n self), nome: str\n-)\n :%0A        self._\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-28_01-41-49",
+            "content": "@@ -711,19 +711,15 @@\n     \n-    \n return%0A\n+\n     \n@@ -992,39 +992,32 @@\n (self):%0A        \n-return \n self.__favorited\n@@ -1261,16 +1261,16 @@\n lse %22-%22%0A\n+\n         \n@@ -1301,17 +1301,16 @@\n nome%7D %5B%22\n- \n + %22, %22.j\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-28_01-44-24",
+            "content": "@@ -969,16 +969,76 @@\n orited%0A%0A\n+    def isFavorited(self):%0A        return self.__favorited%0A%0A\n     def \n@@ -1364,68 +1364,8 @@\n %5D%22%0A%0A\n-    def isFavorited(self):%0A        return self.__favorited%0A%0A\n def \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-28_01-44-50",
+            "content": "@@ -1417,18 +1417,38 @@\n ile True\n-:\n %0A\n+            try:%0A    \n         \n@@ -1474,24 +1474,28 @@\n             \n+    \n print(%22$%22 + \n@@ -1496,24 +1496,28 @@\n %22$%22 + line)%0A\n+    \n             \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-28_01-45-30",
+            "content": "@@ -1517,20 +1517,16 @@\n         \n-    \n if args%5B\n@@ -1554,23 +1554,15 @@\n     \n-    \n break%0A%0A\n-    \n     \n@@ -1597,28 +1597,24 @@\n             \n-    \n print(contat\n@@ -1617,20 +1617,16 @@\n ntato)%0A%0A\n-    \n         \n@@ -1649,20 +1649,16 @@\n %22init%22:%0A\n-    \n         \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-45-49",
+            "content": "@@ -1713,36 +1713,32 @@\n gs%5B1%5D)%0A%0A        \n-    \n elif args%5B0%5D == \n@@ -1740,28 +1740,24 @@\n %5D == %22add%22:%0A\n-    \n             \n@@ -1787,28 +1787,24 @@\n , args%5B2%5D)%0A%0A\n-    \n         elif\n@@ -1825,36 +1825,32 @@\n m%22:%0A            \n-    \n contato.rmfone(i\n@@ -1863,36 +1863,32 @@\n s%5B1%5D))%0A%0A        \n-    \n elif args%5B0%5D == \n@@ -1894,20 +1894,16 @@\n  %22tfav%22%0A\n-    \n         \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-46-10",
+            "content": "@@ -1395,24 +1395,28 @@\n ontato(%22%22)%0A%0A\n+    \n     while Tr\n@@ -1419,16 +1419,20 @@\n e True:%0A\n+    \n         \n@@ -1450,24 +1450,28 @@\n t()%0A        \n+    \n print(%22$%22 + \n@@ -1472,24 +1472,28 @@\n %22$%22 + line)%0A\n+    \n         args\n@@ -1517,16 +1517,20 @@\n         \n+    \n if args%5B\n@@ -1538,24 +1538,28 @@\n %5D == %22end%22:%0A\n+    \n             \n@@ -1565,32 +1565,36 @@\n  break%0A%0A        \n+    \n elif args%5B0%5D == \n@@ -1601,16 +1601,20 @@\n %22show%22:%0A\n+    \n         \n@@ -1633,32 +1633,36 @@\n ntato)%0A%0A        \n+    \n elif args%5B0%5D == \n@@ -1669,16 +1669,20 @@\n %22init%22:%0A\n+    \n         \n@@ -1713,32 +1713,36 @@\n gs%5B1%5D)%0A%0A        \n+    \n elif args%5B0%5D == \n@@ -1744,24 +1744,28 @@\n %5D == %22add%22:%0A\n+    \n             \n@@ -1799,32 +1799,36 @@\n gs%5B2%5D)%0A%0A        \n+    \n elif args%5B0%5D == \n@@ -1833,16 +1833,20 @@\n = %22rm%22:%0A\n+    \n         \n@@ -1879,32 +1879,36 @@\n s%5B1%5D))%0A%0A        \n+    \n elif args%5B0%5D == \n@@ -1914,16 +1914,20 @@\n  %22tfav%22%0A\n+    \n         \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-47-01",
+            "content": "@@ -1295,16 +1295,17 @@\n _fone)+%22\n+%22\n %5D%22%0A%0A    \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-48-10",
+            "content": "@@ -586,25 +586,24 @@\n number: str)\n-:\n %0A        fon\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-48-32",
+            "content": "@@ -632,16 +632,20 @@\n         \n+    \n if fone.\n@@ -651,24 +651,28 @@\n .isValid():%0A\n+    \n             \n@@ -712,15 +712,23 @@\n     \n+    \n return%0A\n+    \n     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-54-56",
+            "content": "@@ -1909,16 +1909,22 @@\n  print(%22\n+fail: \n comando \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-55-18",
+            "content": "@@ -848,33 +848,32 @@\n           print(\n-%22\n fail: index inva\n@@ -868,33 +868,32 @@\n : index invalido\n-%22\n )%0A%0A    def toogl\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-56-07",
+            "content": "@@ -1121,17 +1121,16 @@\n __nome =\n-=\n  nome%0A%0A \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-56-31",
+            "content": "@@ -1840,17 +1840,16 @@\n = %22tfav%22\n-:\n %0A       \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_01-57-17",
+            "content": "@@ -323,39 +323,40 @@\n er%0A    %0A    def \n-__str__\n+toString\n (self):%0A        \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-02-24",
+            "content": "@@ -1789,17 +1789,17 @@\n ntato.rm\n-F\n+f\n one(int(\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-03-17",
+            "content": "@@ -734,23 +734,17 @@\n  invalid\n- number\n+o\n %22)%0A%0A    \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-04-15",
+            "content": "@@ -1222,17 +1222,16 @@\n eturn f%22\n-@\n %7Bfrag%7D %7B\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-05-06",
+            "content": "@@ -1222,16 +1222,17 @@\n eturn f%22\n+@\n %7Bfrag%7D %7B\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-06-04",
+            "content": "@@ -1226,13 +1226,8 @@\n n f%22\n-ligr \n %7Bfra\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-08-33",
+            "content": "@@ -1222,18 +1222,20 @@\n eturn f%22\n-@%22\n+ligr\n  %7Bfrag%7D \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-08-47",
+            "content": "@@ -1222,17 +1222,16 @@\n eturn f%22\n-%22\n @%22 %7Bfrag\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-08-55",
+            "content": "@@ -1222,17 +1222,16 @@\n eturn f%22\n- \n %22@%22 %7Bfra\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-09-07",
+            "content": "@@ -1222,16 +1222,20 @@\n eturn f%22\n+ %22@%22\n  %7Bfrag%7D \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-09-16",
+            "content": "@@ -1222,16 +1222,17 @@\n eturn f%22\n+ \n %7Bfrag%7D %7B\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-09-27",
+            "content": "@@ -1171,16 +1171,17 @@\n   frag =\n+ \n %22@%22 if s\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-09-44",
+            "content": "@@ -1171,17 +1171,16 @@\n   frag =\n- \n %22@%22 if s\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-09-53",
+            "content": "@@ -1202,16 +1202,17 @@\n d else %22\n+-\n %22%0A      \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-10-42",
+            "content": "@@ -1206,9 +1206,8 @@\n se %22\n--\n %22%0A  \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-10-58",
+            "content": "@@ -932,25 +932,20 @@\n  self.__\n-favorited\n+Fone\n  = not s\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-13-18",
+            "content": "@@ -940,16 +940,17 @@\n favorite\n+d\n  = not s\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-13-46",
+            "content": "@@ -940,17 +940,16 @@\n favorite\n-d\n  = not s\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-28_02-51-37",
+            "content": "class Fone:\n    def __init__(self, id:str, number:str):\n        self.__id: str = id\n        self.__number: str = number\n\n    def isValid(self):\n        em = \"013456789().\"\n        return all(e in em for e in self.__number)\n\n    def getId(self):\n        return self.__id\n\n    def getNumber(self):\n        return self.__number\n    \n    def __str__(self):\n        return f\"{self.__id}:{self.__number}\"\n\nclass Contato:\n    def __init__(self, nome: str):\n        self.__nome: str = nome\n        self.__fone: list = []\n        self.__favorited: bool = False\n\n    def addfone(self, id: str, number: str):\n        fone = Fone(id, number)\n        if fone.isValid():\n            self.__fone.append(fone)\n            return\n        print(\"fail: invalid number\")\n\n    def rmFone(self, index: int):\n        try:\n            self.__fone.pop(index)\n        except:\n            print(\"fail: index invalido\")\n\n    def toogleFavorited(self):\n        self.__favorited = not self.__favorited\n\n    def getFones(self):\n        return self.__fone\n\n    def getNome(self):\n        return self.__nome\n\n    def setNome(self, nome: str):\n        return self.__nome == nome\n\n    def __str__(self):\n        frag = \"@\" if self.__favorited else \"-\"\n        return f\"{frag} {self.__nome} [\" + \", \".join(str(e) for e in self.__fone)+\"]\"\n\n    def isFavorited(self):\n        return self.__favorited\n\ndef main():\n    contato = Contato(\"\")\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n\n        elif args[0] == \"show\":\n            print(contato)\n\n        elif args[0] == \"init\":\n            contato = Contato(args[1])\n\n        elif args[0] == \"add\":\n            contato.addfone(args[1], args[2])\n\n        elif args[0] == \"rm\":\n            contato.rmFone(int(args[1]))\n\n        elif args[0] == \"tfav\":\n            contato.toogleFavorited()\n        else:\n            print(\"comando invalido\")\n\nmain()\n            \n\n\n        \n\n\n    ",
+            "lines": "92"
         }
     ]
 }
