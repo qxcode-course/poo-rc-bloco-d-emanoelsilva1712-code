@@ -47,15 +47,25 @@ class Contact:
     def getName(self):
         return self.__name
 
-    def setName(self):
-        return self.__Name
+    def setName(self, nome: str):
+        self.__name = nome
 
     def __str__(self):
         frag = "@" if self.__favorited else "-"
         return f"{frag} {self.__nome} [" + ", ".join(str(e) for e in self.__fone)+"]"
 
-class Agenda()
+class Agenda:
     def __init__(self):
+        self.__contacts: list = []
+
+    def findPosByName(self.__contacts):
+        for i, k in enumerate(self.__contatos):
+            if k.getName()==nome:
+                return i
+
+        return -1
+
+    def addContact(self, nome: str, fones: list[Fone]):
         
 
 def main()
